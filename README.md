@@ -1,16 +1,34 @@
-# React + Vite
+# VixVoxWave website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The static marketing, privacy, support, and comic-story site for
+[VixVoxWave](https://vixvoxwave.com).
 
-Currently, two official plugins are available:
+The project uses JavaScript, React, and the Next.js App Router with a complete
+static export. AWS Amplify publishes the generated `out/` directory.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Local development
 
-## React Compiler
+Use Node 24:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+nvm install
+nvm use
+npm ci
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Validation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run check
+```
+
+The check lints the repository, runs tests and content validation, creates the
+static export, and inspects the built pages for required routes and SEO.
+
+## Publishing boundary
+
+The `main` branch is assumed to deploy automatically to
+`https://vixvoxwave.com`. Do not commit, push, merge, deploy, or approve a comic
+without explicit product-owner approval. Read [AGENTS.md](AGENTS.md) and
+[PROJECT_PLAN.md](PROJECT_PLAN.md) before changing the site.

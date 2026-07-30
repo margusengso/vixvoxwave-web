@@ -4,13 +4,15 @@ frontend:
   phases:
     preBuild:
       commands:
+        - nvm install
+        - nvm use
         - npm ci
     build:
       commands:
-        - npm run build
+        - npm run check
 
   artifacts:
-    baseDirectory: dist
+    baseDirectory: out
     files:
       - '**/*'
 

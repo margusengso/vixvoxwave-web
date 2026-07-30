@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "story-1-haunted-house",
+  "sequence": 1,
+  "slug": "haunted-house",
+  "status": "approved",
+  "language": "en",
+  "title": "Haunted House",
+  "seoTitle": "Haunted House — VixVoxWave Comic Story 1",
+  "description": "Three friends enter a haunted house, where VixVoxWave turns a skeptical phrase into a perfectly timed ghostly prank. Read Story 1.",
+  "dek": "Three friends, one old house, and a skeptical phrase waiting for exactly the wrong quiet moment.",
+  "storyType": "fictional",
+  "contentNote": "Mild spooky imagery and a jump-scare reaction.",
+  "image": {
+    "fallbackPath": "/media/stories/haunted-house/vixvoxwave-haunted-house-1024.jpeg",
+    "width": 1024,
+    "height": 1536,
+    "mimeType": "image/jpeg",
+    "bytes": 586356,
+    "sha256": "b3b2a502a10826aece55f85c00d28ca9180a0079db0b61d4695a9d51439807b7",
+    "responsive": [
+      {
+        "path": "/media/stories/haunted-house/vixvoxwave-haunted-house-512.webp",
+        "width": 512,
+        "height": 768,
+        "mimeType": "image/webp",
+        "bytes": 102400,
+        "sha256": "12eaafdb5125f7c59ec04f2dbb3472a198fc0a9e7d3043e56b90ec31806793c7"
+      },
+      {
+        "path": "/media/stories/haunted-house/vixvoxwave-haunted-house-768.webp",
+        "width": 768,
+        "height": 1152,
+        "mimeType": "image/webp",
+        "bytes": 185010,
+        "sha256": "3a66980f764756a4989d1134e8734f459a1856974cb9c61035cff130054cdcad"
+      },
+      {
+        "path": "/media/stories/haunted-house/vixvoxwave-haunted-house-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "mimeType": "image/webp",
+        "bytes": 332216,
+        "sha256": "8cd13ff423386d33cb172dc9aa0efcda52efc8ca291417014e62ec8a7e729ace"
+      }
+    ]
+  },
+  "shortAlt": "Eight-panel comic: three friends use VixVoxWave for a ghost prank in an old house.",
+  "summary": "On a stormy night, three friends explore an old house. One of them dismisses the idea of ghosts, so another starts VixVoxWave and lets the silence do the rest.",
+  "bodyParagraphs": [
+    "A storm turns an abandoned-looking house into the perfect setting for a dare. Inside, one friend insists that ghosts are not real while another quietly starts VixVoxWave.",
+    "The hallway falls silent. The app captures the skeptical phrase and plays it back in a creepy voice at just the right moment. The group screams, realizes the trick, and dissolves into laughter."
+  ],
+  "longDescription": "On a stormy night, three friends approach a tall, weathered old house lit by lightning. Inside, one friend dismisses ghosts while another challenges him. The friend in a green hoodie starts VixVoxWave on his phone. As the group waits in a dark hallway lined with portraits, the app captures “Ghosts aren’t real,” detects a silent gap, and repeats the phrase in a ghostly voice surrounded by purple mist. All three scream, then laugh when they realize it was a prank. The final panel shows the phone reporting “Laughter detected” and calls VixVoxWave the ultimate ghost prank app.",
+  "panels": [
+    {
+      "number": 1,
+      "heading": "The dare",
+      "visualDescription": "Three friends stand in the rain before a tall, dark old house while lightning forks across the sky.",
+      "transcript": [
+        {
+          "kind": "caption",
+          "text": "A stormy night. An old house. Three friends."
+        },
+        {
+          "kind": "dialogue",
+          "text": "This place is definitely haunted. No way."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "Inside",
+      "visualDescription": "The friends stand together in a dusty room. One smiles at a phone while the others trade skeptical looks.",
+      "transcript": [
+        {
+          "kind": "dialogue",
+          "text": "Ghosts aren’t real. It’s just an old house. Relax."
+        },
+        {
+          "kind": "dialogue",
+          "text": "Sure. Let’s see about that."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "Listening",
+      "visualDescription": "The friend in a green hoodie holds up a phone showing VixVoxWave in a listening state.",
+      "transcript": [
+        {
+          "kind": "dialogue",
+          "text": "I’ve got VixVoxWave running."
+        },
+        {
+          "kind": "screen",
+          "text": "VixVoxWave. Listening…"
+        },
+        {
+          "kind": "caption",
+          "text": "The app listens. Finds the right moment."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "The gap",
+      "visualDescription": "An empty, dim hallway stretches toward a closed door beneath a single hanging light.",
+      "transcript": [
+        {
+          "kind": "caption",
+          "text": "It waits for silence. The perfect gap."
+        },
+        {
+          "kind": "dialogue",
+          "text": "What was that sound…?"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "Captured",
+      "visualDescription": "One friend looks uneasy beside an illustrated app display showing a captured phrase and a detected silence.",
+      "transcript": [
+        {
+          "kind": "dialogue",
+          "text": "Probably the wind."
+        },
+        {
+          "kind": "dialogue",
+          "text": "Or the house…"
+        },
+        {
+          "kind": "screen",
+          "text": "Phrase captured. “Ghosts aren’t real.” Analyzing… Silence detected."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "The answer",
+      "visualDescription": "Purple mist curls through the dark hallway around a pale speech balloon.",
+      "transcript": [
+        {
+          "kind": "caption",
+          "text": "Then it speaks."
+        },
+        {
+          "kind": "dialogue",
+          "text": "Ghosts… aren’t real…"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "heading": "The scare",
+      "visualDescription": "All three friends recoil with wide eyes and startled expressions against a purple burst.",
+      "transcript": [
+        {
+          "kind": "sound",
+          "text": "Ahhhhh!"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "heading": "The reveal",
+      "visualDescription": "The three friends laugh together around the phone after realizing the ghostly voice was a prank.",
+      "transcript": [
+        {
+          "kind": "screen",
+          "text": "VixVoxWave. Laughter detected."
+        },
+        {
+          "kind": "caption",
+          "text": "Scare. Laugh. Repeat. That’s VixVoxWave."
+        },
+        {
+          "kind": "dialogue",
+          "text": "VixVoxWave: the ultimate ghost prank app."
+        }
+      ]
+    }
+  ],
+  "disclosure": "This fictional comic is a playful dramatization. Its illustrated screen and detection events are not a literal walkthrough of the current app and are not a promise of specific detection behavior.",
+  "review": {
+    "assetUseApproved": true,
+    "approvalBasis": "The product owner supplied comic_1.jpeg and explicitly instructed the site to use it on 2026-07-30.",
+    "publicationRequiresCommitApproval": true
+  }
+}

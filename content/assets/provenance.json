@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "story-1-haunted-house-source",
+      "publicPath": "/media/stories/haunted-house/vixvoxwave-haunted-house-1024.jpeg",
+      "sha256": "b3b2a502a10826aece55f85c00d28ca9180a0079db0b61d4695a9d51439807b7",
+      "width": 1024,
+      "height": 1536,
+      "role": "comic",
+      "source": "Owner-supplied comic_1.jpeg",
+      "approval": "The product owner explicitly instructed the website to use this comic on 2026-07-30.",
+      "rightsReview": "Owner confirmation required before the approved code commit."
+    },
+    {
+      "id": "site-social-card-v1",
+      "publicPath": "/media/social/vixvoxwave-social-card.jpg",
+      "sha256": "3b94aaa6f5c173eacad25dee35e6a47c7804e7a86acbc9f78d143cea23f613a0",
+      "width": 1200,
+      "height": 626,
+      "role": "open-graph",
+      "source": "Generated with the built-in OpenAI ImageGen tool on 2026-07-30 and deterministically resized to JPEG.",
+      "prompt": "Create a wide VixVoxWave social-preview card on a deep aubergine background, with a neon purple audio waveform dissolving into a ghostlike wisp, a small lime status dot, and the exact text “VIXVOXWAVE” and “LET THE ROOM SPEAK.” Use the website palette and no phone, app interface, people, animals, store logos, extra words, watermark, signature, border, or comic scene.",
+      "approval": "Pending product-owner review with the complete uncommitted website change set."
+    },
+    {
+      "id": "d128-transparent-logo-web-192",
+      "publicPath": "/media/brand/vixvoxwave-logo-192.png",
+      "sha256": "25a57117353a5139a2845279c6d66753deb2a3461360581259691e5a110adb34",
+      "width": 192,
+      "height": 192,
+      "bytes": 38128,
+      "role": "header-footer-brand-mark",
+      "source": "Owner-directed D-128 assets/logo.png from the sibling VixVoxWave app worktree, resized to 192 × 192 PNG with macOS sips. The transparent logo preserves its existing silhouette/tail/wisp while its face uses the approved D-127 icon expression.",
+      "sourceSha256": "ea3bbffff52736e251cff93403c7162603c8ee5003405bc7d6e404358acb5f19",
+      "approval": "The product owner explicitly requested the transparent logo for the website header/footer, slightly larger, with the approved icon expression on 2026-07-30."
+    },
+    {
+      "id": "canonical-app-icon-web-320",
+      "publicPath": "/media/brand/vixvoxwave-app-icon-320.webp",
+      "sha256": "c9425dcf08109f21d29efdcc66d43b77bd620745a434684f5ba3b0264364756a",
+      "width": 320,
+      "height": 320,
+      "bytes": 13846,
+      "role": "hero-app-icon",
+      "source": "Owner-directed D-127 assets/icon.png from the sibling VixVoxWave app worktree, resized to 320 × 320 WebP with cwebp quality 90.",
+      "sourceSha256": "6e769d4154dcf5d288612cbccd201802800881ba283b215b5ea242f82975d826",
+      "approval": "The product owner explicitly instructed the app and website to replace the scenic icon with the simplified canonical fox direction on 2026-07-30."
+    },
+    {
+      "id": "d127-favicon-web-256",
+      "publicPath": "/favicon.png",
+      "sha256": "2b781d88ee1507dba206b3d528aafd40f4c725293fb96533ef36a95cc00c1851",
+      "width": 256,
+      "height": 256,
+      "bytes": 89966,
+      "role": "browser-favicon",
+      "source": "Owner-approved D-127 assets/icon.png from the sibling VixVoxWave app worktree, resized to 256 × 256 PNG with macOS sips.",
+      "sourceSha256": "6e769d4154dcf5d288612cbccd201802800881ba283b215b5ea242f82975d826",
+      "approval": "The product owner explicitly instructed that every website asset derived from an older VixVoxWave icon or logo be regenerated from the approved D-127 source on 2026-07-30."
+    },
+    {
+      "id": "canonical-app-icon-apple-touch-180",
+      "publicPath": "/apple-touch-icon.png",
+      "sha256": "5994e6f53f08f0913d7dfe603afc278c3dbe48dacacd3f7520f656ed7fe45708",
+      "width": 180,
+      "height": 180,
+      "bytes": 47685,
+      "role": "apple-touch-icon",
+      "source": "Owner-directed D-127 assets/icon.png from the sibling VixVoxWave app worktree, resized to 180 × 180 PNG with macOS sips.",
+      "sourceSha256": "6e769d4154dcf5d288612cbccd201802800881ba283b215b5ea242f82975d826",
+      "approval": "The product owner explicitly instructed the app and website to replace the scenic icon with the simplified canonical fox direction on 2026-07-30."
+    }
+  ]
+}

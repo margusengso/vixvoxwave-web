@@ -10,7 +10,14 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.next
+out
+.vercel
 *.local
+
+# Keep the owner-supplied source outside the public build. The reviewed,
+# metadata-stripped derivatives live under public/media/stories/.
+/comic_1.jpeg
 
 # Editor directories and files
 .vscode/*
