@@ -112,7 +112,15 @@ for (const page of pages) {
   if (!html.includes('/media/brand/vixvoxwave-logo-192.png')) {
     fail(`${page.file}: transparent VixVoxWave logo is missing`)
   }
-  if (!html.includes('/favicon.png') || !html.includes('/apple-touch-icon.png')) {
+  const requiredBrowserIcons = [
+    '/favicon.ico',
+    '/favicon-16x16.png',
+    '/favicon-32x32.png',
+    '/favicon-48x48.png',
+    '/favicon.png',
+    '/apple-touch-icon.png',
+  ]
+  if (requiredBrowserIcons.some((icon) => !html.includes(icon))) {
     fail(`${page.file}: canonical browser icons are missing`)
   }
   if (/vite|react logo|count is/i.test(html)) {

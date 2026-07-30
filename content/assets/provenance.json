@@ -48,16 +48,68 @@
       "approval": "The product owner explicitly instructed the app and website to replace the scenic icon with the simplified canonical fox direction on 2026-07-30."
     },
     {
-      "id": "d127-favicon-web-256",
+      "id": "d129-transparent-favicon-web-256",
       "publicPath": "/favicon.png",
-      "sha256": "2b781d88ee1507dba206b3d528aafd40f4c725293fb96533ef36a95cc00c1851",
+      "sha256": "f426321d91bf18d2ab7ebcbc7ac9413ced8571a65780553f172cf8b3d3399113",
       "width": 256,
       "height": 256,
-      "bytes": 89966,
+      "bytes": 60910,
       "role": "browser-favicon",
-      "source": "Owner-approved D-127 assets/icon.png from the sibling VixVoxWave app worktree, resized to 256 × 256 PNG with macOS sips.",
-      "sourceSha256": "6e769d4154dcf5d288612cbccd201802800881ba283b215b5ea242f82975d826",
-      "approval": "The product owner explicitly instructed that every website asset derived from an older VixVoxWave icon or logo be regenerated from the approved D-127 source on 2026-07-30."
+      "source": "Owner-selected assets/favicon.png from the sibling VixVoxWave app worktree. Its uniform #120f1d background was removed deterministically, the existing fox artwork was tightly fit with an 8 px vertical safety margin, and no AI-redrawn pixels were used.",
+      "sourceSha256": "39f921d1cb0bab5890948074787604279354c56c4fbbef3b61fdf40af5454b70",
+      "approval": "The product owner explicitly selected this simple capped-fox favicon, requested background removal and reduced padding, and asked that it be applied wherever appropriate on 2026-07-30."
+    },
+    {
+      "id": "d129-transparent-favicon-web-16",
+      "publicPath": "/favicon-16x16.png",
+      "sha256": "eeb0010d9fbbfa9389a644ce3ba1247bf8f1ab34f4c1b063dc94aa40c22ce9b2",
+      "width": 16,
+      "height": 16,
+      "bytes": 813,
+      "role": "browser-favicon-16",
+      "source": "Deterministic 16 × 16 Lanczos derivative of /favicon.png.",
+      "sourceSha256": "f426321d91bf18d2ab7ebcbc7ac9413ced8571a65780553f172cf8b3d3399113",
+      "approval": "Covered by the owner's explicit favicon background-removal, padding, and site-wide application request on 2026-07-30."
+    },
+    {
+      "id": "d129-transparent-favicon-web-32",
+      "publicPath": "/favicon-32x32.png",
+      "sha256": "ab46630b5f8f115d8f1ec62517d5c136a81fda1514bc3092d0791835e0adda4c",
+      "width": 32,
+      "height": 32,
+      "bytes": 2258,
+      "role": "browser-favicon-32",
+      "source": "Deterministic 32 × 32 Lanczos derivative of /favicon.png.",
+      "sourceSha256": "f426321d91bf18d2ab7ebcbc7ac9413ced8571a65780553f172cf8b3d3399113",
+      "approval": "Covered by the owner's explicit favicon background-removal, padding, and site-wide application request on 2026-07-30."
+    },
+    {
+      "id": "d129-transparent-favicon-web-48",
+      "publicPath": "/favicon-48x48.png",
+      "sha256": "3a955be04332975acab3838e4304d77178b5e4a83c2a4edc05771a9c48de3215",
+      "width": 48,
+      "height": 48,
+      "bytes": 4241,
+      "role": "browser-favicon-48",
+      "source": "Deterministic 48 × 48 Lanczos derivative of /favicon.png.",
+      "sourceSha256": "f426321d91bf18d2ab7ebcbc7ac9413ced8571a65780553f172cf8b3d3399113",
+      "approval": "Covered by the owner's explicit favicon background-removal, padding, and site-wide application request on 2026-07-30."
+    },
+    {
+      "id": "d129-transparent-favicon-web-ico",
+      "publicPath": "/favicon.ico",
+      "sha256": "d68691d4fa01c110668629bdc5878da8ebe0eff6dac429db799d960007b76490",
+      "bytes": 68292,
+      "sizes": [
+        16,
+        32,
+        48,
+        256
+      ],
+      "role": "browser-favicon-fallback",
+      "source": "Deterministic multi-size ICO containing PNG-compressed 16, 32, 48, and 256 px derivatives of /favicon.png.",
+      "sourceSha256": "f426321d91bf18d2ab7ebcbc7ac9413ced8571a65780553f172cf8b3d3399113",
+      "approval": "Covered by the owner's explicit favicon background-removal, padding, and site-wide application request on 2026-07-30."
     },
     {
       "id": "canonical-app-icon-apple-touch-180",

@@ -36,7 +36,7 @@ No mobile native build is required for website-only work.
 | Publication gate | Human approval is required for every comic |
 | Source-control gate | Human approval is required before every commit |
 | Comic accessibility UI | Text description and transcript are collapsed by default |
-| Website brand assets | Use the transparent `D-128` logo in the header/footer; use the owner-approved `D-127` app icon for the hero, favicon, and Apple touch icon |
+| Website brand assets | Use the transparent `D-128` logo in the header/footer, the owner-approved `D-127` app icon for the hero and Apple touch icon, and the transparent, tightly fitted `D-129` capped-fox micro mark for browser favicons |
 
 The earlier mobile-repository plans assumed that this repository did not yet
 exist and proposed dated `/comics/` paths. The owner’s 2026-07-30 instruction
@@ -63,10 +63,13 @@ Status markers: `[ ]` planned, `[>]` active, `[x]` complete, `[!]` blocked.
   clear fictional/illustrative disclosure.
 - [x] `WEB-5` Add `robots.txt`, `sitemap.xml`, repository/content checks, built
   HTML checks, and one required `npm run check`.
-- [!] `WEB-6` Complete human review of app claims, privacy copy, Story 1 copy,
-  visual rights, accessibility text, metadata, and the complete diff.
-- [!] `WEB-7` Commit and publish. Blocked until the product owner explicitly
-  approves the exact commit. A push to `main` is assumed to trigger production.
+- [x] `WEB-6` Complete the initial-release human review of app claims, privacy
+  copy, Story 1 copy, visual rights, accessibility text, metadata, and the
+  complete diff.
+- [x] `WEB-7` Publish the initial release from `main`; the product owner
+  confirmed the commit is published.
+- [!] `WEB-8` Commit and publish the `D-129` transparent-favicon correction.
+  Blocked until the product owner explicitly approves this exact new commit.
 
 ## Release 1 implementation evidence
 
@@ -76,7 +79,9 @@ Status markers: `[ ]` planned, `[>]` active, `[x]` complete, `[!]` blocked.
 - `npm audit --audit-level=moderate` reported zero known vulnerabilities.
 - Next.js generated Story 1 as static HTML at
   `/stories/1/haunted-house/`; all other release routes are static.
-- No commit, push, deployment, AWS setting, or domain setting was changed.
+- The product owner subsequently published the initial release. The current
+  `D-129` favicon correction remains uncommitted; no push, deployment, AWS
+  setting, or domain setting was changed for this correction.
 - No new comic was generated. The supplied Story 1 image was copied and
   resized for the web, while the separate generated social-preview card remains
   pending owner review.
@@ -84,8 +89,15 @@ Status markers: `[ ]` planned, `[>]` active, `[x]` complete, `[!]` blocked.
   `assets/logo.png`, rendered slightly larger at 50 px desktop and 44 px on
   compact screens. Its eyes, brows, and open smile match the approved `D-127`
   icon expression without introducing the icon's opaque blue-black field.
-- The hero icon, browser favicon, and Apple touch icon remain deterministic
-  derivatives of the owner-approved `D-127` app icon source.
+- The hero icon and Apple touch icon remain deterministic derivatives of the
+  owner-approved `D-127` app icon source. Browser favicons use the existing
+  dedicated capped-fox micro mark with only its uniform background removed and
+  padding reduced; explicit 16, 32, and 48 px PNGs plus a multi-size ICO avoid
+  stale browser fallback behavior.
+- Local static-browser verification loaded every declared favicon reference and
+  confirmed the browser requested the new multi-size `/favicon.ico` with HTTP
+  200. The 256 px source and all PNG derivatives use RGBA with transparent
+  corners and no hidden RGB under fully transparent pixels.
 - Local-browser review at 1280 × 720 and 390 × 844 confirms clean transparent
   header/footer blending, balanced wordmark spacing, exact 50/44 px sizing, and
   no console errors.
