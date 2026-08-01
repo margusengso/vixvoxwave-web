@@ -40,7 +40,8 @@ const pages = [
     required: [
       'Privacy policy',
       'does not upload microphone audio',
-      'AWS Amplify',
+      'does not send captured audio',
+      'Children&#x27;s privacy',
       'support.vixvoxwave@gmail.com',
     ],
   },

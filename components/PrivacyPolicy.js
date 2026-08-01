@@ -9,11 +9,11 @@ export function PrivacyPolicy() {
         <p className="policy__lead">
           VixVoxWave is designed around foreground, on-device audio processing.
           The app does not upload microphone audio, transcripts, or acoustic
-          features. The website is static and launches without product
-          analytics, advertising, account creation, or a contact form.
+          features. We do not use accounts, advertising, behavioral tracking,
+          or product analytics.
         </p>
         <p className="policy__date">
-          Effective and last updated: <time dateTime="2026-07-30">30 July 2026</time>
+          Effective and last updated: <time dateTime="2026-08-01">1 August 2026</time>
         </p>
       </section>
 
@@ -37,93 +37,61 @@ export function PrivacyPolicy() {
       </section>
 
       <section aria-labelledby="app-processing">
-        <h2 id="app-processing">3. How the app handles audio</h2>
-        <ul>
-          <li>
-            <strong>You start every listening session.</strong> The app asks
-            for microphone access only after you choose to start listening.
-            Listening is foreground-only, stays on a visible session screen,
-            and can be stopped at any time.
-          </li>
-          <li>
-            <strong>Analysis happens on your device.</strong> In Default mode,
-            the app can analyze speech and room events locally. Ambient Only
-            analyzes room events without speech transcription.
-          </li>
-          <li>
-            <strong>Captured content is temporary.</strong> A bounded rolling
-            audio window of about 210 seconds lets a selected moment survive
-            until replay. Transcripts and candidates remain in current-session
-            memory. Extracted and transformed audio files are temporary.
-          </li>
-          <li>
-            <strong>Cleanup follows the session.</strong> The app attempts to
-            delete session-owned audio when you stop, switch mode, leave the
-            listening screen, or move the app out of the foreground. If a
-            force-quit prevents cleanup, the next launch removes abandoned
-            files from VixVoxWave-owned cache locations before the app becomes
-            usable. The operating system may also clear app cache.
-          </li>
-          <li>
-            <strong>There is no captured-content history.</strong> The app does
-            not keep a history of audio, transcripts, phrases, room events, or
-            replays and cannot restore them after a session.
-          </li>
-        </ul>
+        <h2 id="app-processing">3. Microphone and audio processing</h2>
         <p>
-          VixVoxWave does not upload microphone audio, transcripts, or acoustic
-          features to the developer or to a speech-processing service.
+          You start every listening session. The app asks for microphone
+          permission when you choose to listen, works only while the listening
+          screen is visible, and stops when you leave that screen or move the
+          app out of the foreground.
+        </p>
+        <p>
+          Audio analysis happens on your device. Default mode can analyze
+          speech and room events. Ambient Only analyzes room events without
+          transcribing speech. VixVoxWave does not upload microphone audio,
+          transcripts, or acoustic features to us or to a speech-processing
+          service.
+        </p>
+        <p>
+          Captured content is temporary. The app keeps a rolling audio window
+          of up to about 210 seconds so it can replay a selected moment.
+          Transcripts, detected events, and replay files are used only during
+          the current session. They are deleted when the session ends and
+          cannot be restored later. If the app closes before cleanup finishes,
+          it removes remaining temporary files the next time it opens.
         </p>
       </section>
 
       <section aria-labelledby="local-settings">
-        <h2 id="local-settings">4. Information stored on your device</h2>
+        <h2 id="local-settings">4. Settings stored on your device</h2>
         <p>
-          The app stores a small allowlisted settings record so it can remember
-          your privacy acknowledgement, listening and replay preferences, and
-          automatic language setting. It does not store captured-content
-          identifiers or a user account. Native builds keep those settings in
-          app storage; a browser build may use one origin-local storage key for
-          the same non-content settings.
+          The app stores your privacy acknowledgement and listening, replay,
+          mode, and language preferences on your device. These settings do not
+          include captured audio, transcripts, detected room events, or a user
+          account.
         </p>
         <p>
           You can revoke microphone permission in your device settings. You can
-          remove local app data using your operating system&apos;s app-data
-          controls or by uninstalling the app, subject to any device-backup
-          behavior controlled by your platform provider.
+          remove the app&apos;s local data using your device&apos;s app-data
+          controls or by uninstalling the app.
         </p>
       </section>
 
       <section aria-labelledby="app-network">
-        <h2 id="app-network">5. App network services and diagnostics</h2>
+        <h2 id="app-network">5. Information we receive</h2>
         <p>
-          The current app has no user accounts, advertising, developer product
-          analytics, or active purchase system. Apple, Google, and Expo/EAS may
-          process routine app-store, installation, update-check, device, and
-          diagnostic information under their own settings and privacy terms.
-          Those technical services do not receive microphone content from
-          VixVoxWave.
+          VixVoxWave does not send captured audio, transcripts, room-event
+          features, or replay content to us or to a speech-processing service.
+          The app has no user accounts, advertising, behavioral tracking,
+          or analytics. The app currently does not offer purchases.
         </p>
-        <p>
-          Development builds can create privacy-filtered console diagnostics
-          about timing, counts, coarse labels, outcomes, and errors. They do
-          not include raw audio, full transcripts, private file paths, or
-          content identifiers, and they are not automatically sent to an
-          analytics service. A tester controls any manual sharing.
-        </p>
-      </section>
-
-      <section aria-labelledby="website-data">
-        <h2 id="website-data">6. Website and support data</h2>
         <div className="policy-table-wrap">
           <table>
-            <caption>Website and support processing</caption>
+            <caption>Information we may receive outside the app</caption>
             <thead>
               <tr>
-                <th scope="col">Activity</th>
+                <th scope="col">When</th>
                 <th scope="col">Information</th>
-                <th scope="col">Why</th>
-                <th scope="col">Retention</th>
+                <th scope="col">Purpose</th>
               </tr>
             </thead>
             <tbody>
@@ -134,12 +102,7 @@ export function PrivacyPolicy() {
                   requested path, browser or user-agent details, referrer, and
                   response status
                 </td>
-                <td>Deliver, secure, troubleshoot, and operate the static site</td>
-                <td>
-                  AWS Amplify&apos;s hosting access logs are retained for the
-                  lifetime of the hosted app under its current service
-                  behavior
-                </td>
+                <td>Deliver, secure, troubleshoot, and operate the website</td>
               </tr>
               <tr>
                 <th scope="row">Email support</th>
@@ -147,12 +110,7 @@ export function PrivacyPolicy() {
                   Your email address, message, attachments, and related email
                   headers
                 </td>
-                <td>Reply, investigate the issue you report, and maintain necessary records</td>
-                <td>
-                  Until the issue and reasonable follow-up are complete, unless
-                  a longer period is needed for security, legal obligations, or
-                  legal claims
-                </td>
+                <td>Reply to you, investigate the issue, and keep necessary records</td>
               </tr>
             </tbody>
           </table>
@@ -165,33 +123,43 @@ export function PrivacyPolicy() {
       </section>
 
       <section aria-labelledby="purposes">
-        <h2 id="purposes">7. Purposes and legal grounds</h2>
+        <h2 id="purposes">6. How and why we use information</h2>
         <p>
-          Where data-protection law requires a legal basis, VixVoxWave relies
-          on providing the feature or support you request, taking steps at your
-          request, and legitimate interests in keeping the website and service
-          secure and reliable. Where consent is required, it is requested
-          separately. A device microphone permission is also a technical
-          control you can revoke; it is not used as permission for advertising
-          or unrelated processing.
+          We use website request data to deliver, secure, and troubleshoot the
+          website. We use support messages to answer you and investigate the
+          issue you report. Where law requires a legal basis, we rely on
+          providing the service or support you request, our legitimate
+          interests in operating a secure and reliable service, compliance
+          with legal obligations, or consent where we ask for it.
         </p>
       </section>
 
       <section aria-labelledby="sharing">
-        <h2 id="sharing">8. Service providers, sharing, and transfers</h2>
+        <h2 id="sharing">7. Sharing and international transfers</h2>
         <p>
-          The static website is hosted through Amazon Web Services (AWS)
-          Amplify and its global content-delivery network. Support email is
-          processed through Google&apos;s Gmail service and your own email
-          provider. App distribution and updates may involve Apple, Google, and
-          Expo. These providers process relevant technical data under their
-          agreements and privacy terms and may operate internationally.
+          We use service providers to deliver and secure the website, process
+          support email, and distribute the app. They process information only
+          as needed to provide those services. They may operate in countries
+          other than your own; where required, we use appropriate safeguards
+          for international transfers.
         </p>
         <p>
           VixVoxWave does not sell personal data and does not share it for
           behavioral advertising. Information may be disclosed when reasonably
           necessary to comply with law, protect users or the service, or
           establish, exercise, or defend legal claims.
+        </p>
+      </section>
+
+      <section aria-labelledby="retention">
+        <h2 id="retention">8. How long we keep information</h2>
+        <p>
+          The app&apos;s captured content is temporary and is handled as
+          described above. Website request data is kept only as long as
+          reasonably necessary for security, troubleshooting, and operation.
+          Support correspondence is kept until the issue and reasonable
+          follow-up are complete, unless a longer period is needed for
+          security, legal obligations, or legal claims.
         </p>
       </section>
 
@@ -218,10 +186,10 @@ export function PrivacyPolicy() {
         <h2 id="security">10. Security and responsible use</h2>
         <p>
           VixVoxWave reduces risk by keeping microphone-content processing on
-          device, limiting temporary retention, using app-scoped storage, and
-          avoiding accounts and advertising identifiers in the current
-          release. No device, storage system, email service, or network can be
-          guaranteed perfectly secure.
+          device, limiting temporary retention, and avoiding accounts,
+          advertising identifiers, and behavioral tracking. No device,
+          storage system, email service, or network can be guaranteed perfectly
+          secure.
         </p>
         <p>
           Do not use VixVoxWave for covert recording. If other people may be
@@ -230,19 +198,27 @@ export function PrivacyPolicy() {
         </p>
       </section>
 
-      <section aria-labelledby="changes">
-        <h2 id="changes">11. Changes to this policy</h2>
+      <section aria-labelledby="children">
+        <h2 id="children">11. Children&apos;s privacy</h2>
         <p>
-          This policy will be reviewed before adding purchases, accounts,
-          remote model downloads, analytics, advertising, a contact form, or
-          another service that changes data handling. Material changes will
-          update the date above and be presented through an appropriate
-          website, app, or store notice.
+          VixVoxWave does not create user profiles or knowingly collect
+          children&apos;s microphone content. If a child emails support, a
+          parent or guardian may contact us to request deletion of that
+          correspondence.
+        </p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">12. Changes to this policy</h2>
+        <p>
+          We may update this policy when VixVoxWave or its data handling
+          changes. We will update the date above and provide an appropriate
+          website, app, or store notice for material changes.
         </p>
       </section>
 
       <section aria-labelledby="privacy-contact">
-        <h2 id="privacy-contact">12. Contact</h2>
+        <h2 id="privacy-contact">13. Contact</h2>
         <p>
           Email: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
         </p>
