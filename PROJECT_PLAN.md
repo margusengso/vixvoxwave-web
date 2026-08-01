@@ -1,6 +1,6 @@
 # VixVoxWave website project plan
 
-Last updated: 2026-07-30
+Last updated: 2026-08-01
 
 ## Outcome
 
@@ -36,7 +36,7 @@ No mobile native build is required for website-only work.
 | Publication gate | Human approval is required for every comic |
 | Source-control gate | Human approval is required before every commit |
 | Comic accessibility UI | Text description and transcript are collapsed by default |
-| Website brand assets | Use the transparent `D-128` logo in the header/footer, the owner-approved `D-127` app icon for the hero and Apple touch icon, and the transparent, tightly fitted `D-129` capped-fox micro mark for browser favicons |
+| Website brand assets | Use the transparent `D-128` logo in the header/footer, the owner-approved `D-127` app icon inside the hero and for the Apple touch icon, the transparent, tightly fitted `D-129` capped-fox micro mark for browser favicons, and the provenance-recorded aubergine crag landscape behind the hero signal |
 
 The earlier mobile-repository plans assumed that this repository did not yet
 exist and proposed dated `/comics/` paths. The owner’s 2026-07-30 instruction
@@ -68,8 +68,18 @@ Status markers: `[ ]` planned, `[>]` active, `[x]` complete, `[!]` blocked.
   complete diff.
 - [x] `WEB-7` Publish the initial release from `main`; the product owner
   confirmed the commit is published.
-- [!] `WEB-8` Commit and publish the `D-129` transparent-favicon correction.
-  Blocked until the product owner explicitly approves this exact new commit.
+- [x] `WEB-8` Commit the `D-129` transparent-favicon correction. Commit
+  `bc4dac1` is present at both local `main` and `origin/main`; this task did not
+  infer or verify the corresponding production deployment.
+- [x] `WEB-9` Refine the landing hero with an original monochromish landscape,
+  an increasingly erratic signal that resolves into a faint open wisp, and a
+  normal-flow status row that cannot overlap the waveform on compact layouts.
+- [!] `WEB-10` Commit the `WEB-9` landing-hero refinement. Blocked until the
+  product owner explicitly approves the exact new commit; commit approval does
+  not authorize a push or deployment.
+- [!] `WEB-11` Push and publish the committed `WEB-9` refinement. Separately
+  blocked until the product owner explicitly approves that production action;
+  no push, deployment, AWS change, or domain change is part of `WEB-9`.
 
 ## Release 1 implementation evidence
 
@@ -79,9 +89,39 @@ Status markers: `[ ]` planned, `[>]` active, `[x]` complete, `[!]` blocked.
 - `npm audit --audit-level=moderate` reported zero known vulnerabilities.
 - Next.js generated Story 1 as static HTML at
   `/stories/1/haunted-house/`; all other release routes are static.
-- The product owner subsequently published the initial release. The current
-  `D-129` favicon correction remains uncommitted; no push, deployment, AWS
-  setting, or domain setting was changed for this correction.
+- The product owner subsequently published the initial release. The `D-129`
+  favicon correction is now present at commit `bc4dac1` on local and upstream
+  `main`; its production deployment was not inspected in this task.
+- `WEB-9` replaces the hero card's generic grid and circular rings with a
+  48,876-byte, 900 × 1125 WebP landscape of near-monochrome aubergine rock,
+  forest, and mist. Owner review refined it into one immediate read: a
+  hikeable/campable valley, broad asymmetric inward-facing rock walls that
+  plausibly return an echo, encroaching darkness, a faint far-ridge shadow
+  echo, and an irregular floor with conifers, small birch/aspen forms, shrubs,
+  ferns, hummocks, boulders, and sheltered clearings. The generated lineage,
+  final production prompt, deterministic crop/resize/encoding, hashes, role,
+  and owner direction are recorded in `content/assets/provenance.json`.
+- The hero waveform now uses 20 static unequal beats: its early section remains
+  restrained, its final eight bars become taller, offset, and tilted, and one
+  code-native pale-lilac curl provides the ghastly hint. The final card has no
+  animated elements, outer decorative geometry, texture overlay, or glitch
+  effect.
+- `Foreground session` is no longer absolutely positioned. It occupies a
+  bordered footer row in normal flow, leaving a measured 17 px wave/status gap
+  at every reviewed width. Responsive browser review covered effective 320 px
+  content width plus 390, 440, 720, 900, and 1280 px layouts;
+  headline/status content fit, the wave remained inside the card, horizontal
+  content overflow was absent, the landscape loaded, the card reported zero
+  animated descendants, and the browser reported no console warnings or
+  errors.
+- `npm run check` passed on 2026-08-01: lint, four Node tests, provenance/content
+  validation, the production static export, and built-output checks all pass.
+  `git diff --check` also passes. `WEB-9` remains an uncommitted local change;
+  no commit, push, merge, deployment, AWS setting, or domain setting changed.
+- **Build impact: NO NATIVE REBUILD. This is website-only work in a separate
+  repository.** **OWNER APP ACTION: NOT REQUIRED — you do not need to load the
+  app to confirm this website-only checkpoint; the web static checks and
+  responsive browser review are sufficient.**
 - No new comic was generated. The supplied Story 1 image was copied and
   resized for the web, while the separate generated social-preview card remains
   pending owner review.
@@ -128,15 +168,15 @@ not a promise of daily publication.
 
 ## Next releases
 
-- `WEB-8`: formalize the brand/character/continuity/claim/reference controls
+- `WEB-12`: formalize the brand/character/continuity/claim/reference controls
   and create explicit-only site/comic repository skills after the owner updates
   the comic-creation guides.
-- `WEB-9`: add deterministic AVIF/OG generation, feed output, richer negative
+- `WEB-13`: add deterministic AVIF/OG generation, feed output, richer negative
   content tests, browser accessibility tests, and performance budgets.
-- `WEB-10`: reconcile controller identity, legal address, AWS log policy,
+- `WEB-14`: reconcile controller identity, legal address, AWS log policy,
   Gmail support retention, store disclosures, purchases, and platform links
   immediately before the first production/store release.
-- `WEB-11`: add real App Store/Google Play links and unmodified official badges
+- `WEB-15`: add real App Store/Google Play links and unmodified official badges
   only when the corresponding listings or approved pre-registration pages
   exist.
 
@@ -150,4 +190,5 @@ not a promise of daily publication.
   retention criteria, age/audience policy, and complaint jurisdiction.
 - Verification of the existing Amplify region, domain redirects, access-log
   settings, security headers, and rollback path.
-- Human approval of the first page and exact code commit.
+- Human approval of the final `WEB-9` hero, its exact code commit, and the
+  separately gated push/publication action.

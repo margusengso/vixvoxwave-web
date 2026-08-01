@@ -5,6 +5,29 @@ import { StoryCard } from '../components/StoryCard'
 import { getApprovedStories } from '../lib/stories'
 import { SUPPORT_EMAIL } from '../lib/site'
 
+const HERO_WAVEFORM = [
+  { height: 14, opacity: 0.56, shift: 1, tilt: 0 },
+  { height: 20, opacity: 0.58, shift: -1, tilt: 1 },
+  { height: 16, opacity: 0.6, shift: 2, tilt: -1 },
+  { height: 25, opacity: 0.62, shift: -1, tilt: 1 },
+  { height: 20, opacity: 0.64, shift: 2, tilt: -1 },
+  { height: 29, opacity: 0.66, shift: -2, tilt: 1 },
+  { height: 23, opacity: 0.68, shift: 1, tilt: -1 },
+  { height: 35, opacity: 0.7, shift: -2, tilt: 1 },
+  { height: 27, opacity: 0.72, shift: 2, tilt: -1 },
+  { height: 41, opacity: 0.74, shift: -3, tilt: 2 },
+  { height: 32, opacity: 0.76, shift: 3, tilt: -2 },
+  { height: 53, opacity: 0.8, shift: -3, tilt: 2 },
+  { height: 39, opacity: 0.82, shift: 4, tilt: -2 },
+  { height: 69, opacity: 0.86, shift: -5, tilt: 3 },
+  { height: 47, opacity: 0.88, shift: 6, tilt: -3 },
+  { height: 85, opacity: 0.92, shift: -7, tilt: 4 },
+  { height: 57, opacity: 0.94, shift: 8, tilt: -5 },
+  { height: 99, opacity: 1, shift: -8, tilt: 5 },
+  { height: 44, opacity: 0.94, shift: 9, tilt: -6 },
+  { height: 83, opacity: 0.98, shift: -7, tilt: 4 },
+]
+
 export default function HomePage() {
   const [firstStory] = getApprovedStories()
 
@@ -45,11 +68,23 @@ export default function HomePage() {
             </div>
             <p>THE ROOM IS LISTENING BACK</p>
             <div className="hero-wave">
-              {[18, 34, 60, 92, 54, 29, 72, 110, 76, 45, 84, 52, 24].map(
-                (height, index) => (
-                  <span key={`${height}-${index}`} style={{ '--wave-height': `${height}px` }} />
-                ),
-              )}
+              <div className="hero-wave__bars">
+                {HERO_WAVEFORM.map(({ height, opacity, shift, tilt }, index) => (
+                  <span
+                    className="hero-wave__bar"
+                    key={`${height}-${index}`}
+                    style={{
+                      '--wave-height': `${height}px`,
+                      '--wave-opacity': opacity,
+                      '--wave-shift': `${shift}px`,
+                      '--wave-tilt': `${tilt}deg`,
+                    }}
+                  />
+                ))}
+              </div>
+              <div className="hero-wave__wisp">
+                <span className="hero-wave__curl" />
+              </div>
             </div>
             <div className="signal-card__status">
               <span className="status-dot" />

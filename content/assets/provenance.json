@@ -48,6 +48,19 @@
       "approval": "The product owner explicitly instructed the app and website to replace the scenic icon with the simplified canonical fox direction on 2026-07-30."
     },
     {
+      "id": "landing-signal-landscape-v1",
+      "publicPath": "/media/brand/vixvoxwave-signal-landscape.webp",
+      "sha256": "6558be62625fdc8bdb3df8948d8f06a40d9ff11d29ac8faa69aaa8f80b29006d",
+      "width": 900,
+      "height": 1125,
+      "bytes": 48876,
+      "role": "landing-hero-signal-card-background",
+      "source": "Generated and iteratively edited with the built-in OpenAI ImageGen tool on 2026-08-01. The approved web app-icon derivative supplied only the initial palette, atmosphere, and landscape-language reference. Owner-directed passes replaced needle-like symmetric peaks with realistic hikeable/campable terrain, added soil-supported mixed vegetation, preserved engulfing darkness, simplified the scene for a one-to-two-second read, and shaped broad asymmetric inward-facing rock walls into a natural echo bowl. The final 1122 × 1402 RGB source was deterministically cropped to 1120 × 1400, resized to 900 × 1125, and encoded as WebP at quality 86.",
+      "sourceSha256": "ee8bc44bfd3798670e3ba6c57f3380f76cb2a5016cabcce26d92b8b19d342ed4",
+      "prompt": "Use case: precise-object-edit. Asset type: portrait landing-page signal-card background viewed mostly at 300–450 CSS pixels wide. Change only the open valley floor and its vegetation so it no longer looks like a boring, vertically diagonal field. Preserve the echoable mountain bowl exactly. Break up the repeated diagonal surface into an irregular natural mosaic of broad soil patches, low hummocks, scattered stable boulder groups, small grass/sedge clearings, blueberry-like low shrubs, ferns, and a few fallen weathered branches or logs. Keep the subtle hikeable route, but make it gently meander around these features rather than drawing a straight or diagonal stripe. Retain conifers, add several small birch/aspen-like deciduous trees with restrained pale-gray trunks and muted violet foliage, and include low rounded shrubs. Use larger grouped shapes that remain legible at small card size; create natural mess without micro-detail or visual noise. Keep several sheltered flat campable pockets. Preserve both broad inward-facing weathered rock walls and their natural acoustic-bowl geometry, asymmetry, stable talus/soil transitions, all mountain silhouettes, the three-layer hierarchy, exact deep-aubergine / ink-violet / smoky-lavender palette, moonless engulfing darkness, low contrast, faint far-ridge darkness echo, ancient mystique, realistic tree rooting, portrait framing, and conservative no-glitch illustration style. No people, animals, tents, campfires, cabins, buildings, signs, roads, bridges, faces, eyes, skulls, tentacles, creatures, ghosts, moons, portals, circles, occult symbols, text, letters, numbers, logos, waveforms, UI, border, frame, watermark, signature, or bright focal glow. Avoid repeated diagonal lines, uniform field texture, plantation-like rows, all-spruce vegetation, dense clutter, unsafe obstacles across the whole route, symmetry, needle peaks, perilous terrain, ornamental effects, and anything that reads like a glitch.",
+      "approval": "The product owner explicitly requested a monochromish landscape treatment like the approved icon for the landing hero on 2026-08-01; commit and production publication still require separate approval."
+    },
+    {
       "id": "d129-transparent-favicon-web-256",
       "publicPath": "/favicon.png",
       "sha256": "f426321d91bf18d2ab7ebcbc7ac9413ced8571a65780553f172cf8b3d3399113",
