@@ -26,8 +26,8 @@ export default function StoriesPage() {
         <h1>Stories from the listening room.</h1>
         <p>
           Each comic has a permanent numbered place in the series, a
-          descriptive URL, and an accessible transcript. New stories appear
-          only after human review.
+          descriptive URL, and an accessible transcript. The latest approved
+          story appears first; new stories appear only after human review.
         </p>
       </header>
 

@@ -1,6 +1,10 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import test from 'node:test'
+import {
+  getChronologicalStoryNeighbors,
+  sortStoriesNewestFirst,
+} from '../lib/story-order.js'
 
 const storyUrl = new URL('../content/stories/1-haunted-house.json', import.meta.url)
 const story = JSON.parse(await readFile(storyUrl, 'utf8'))
@@ -31,4 +35,25 @@ test('Story 1 separates fiction from product claims', () => {
   assert.equal(story.storyType, 'fictional')
   assert.match(story.disclosure, /not a literal walkthrough/i)
   assert.match(story.disclosure, /not a promise/i)
+})
+
+test('Story collections display newest first without reversing chronology links', () => {
+  const stories = [
+    { id: 'story-1', sequence: 1 },
+    { id: 'story-3', sequence: 3 },
+    { id: 'story-2', sequence: 2 },
+  ]
+  const newestFirst = sortStoriesNewestFirst(stories)
+
+  assert.deepEqual(
+    newestFirst.map(({ sequence }) => sequence),
+    [3, 2, 1],
+  )
+  assert.deepEqual(
+    getChronologicalStoryNeighbors(stories[2], newestFirst),
+    {
+      next: stories[1],
+      previous: stories[0],
+    },
+  )
 })

@@ -1,6 +1,6 @@
 # VixVoxWave website project plan
 
-Last updated: 2026-08-01
+Last updated: 2026-08-07
 
 ## Outcome
 
@@ -28,6 +28,7 @@ No mobile native build is required for website-only work.
 | Public support email | `support.vixvoxwave@gmail.com` |
 | Initial language | English |
 | Story archive | `/stories/` |
+| Story presentation order | Latest approved story first on the landing page and archive; immutable sequence numbers still define chronological Previous/Next navigation |
 | Story URL | `/stories/{sequence}/{descriptive-slug}/` |
 | First story | `/stories/1/haunted-house/` |
 | First story source | Owner-supplied `comic_1.jpeg` |
@@ -162,6 +163,10 @@ Status markers: `[ ]` planned, `[>]` active, `[x]` complete, `[!]` blocked.
    deploy without it.
 10. After the owner publishes, verify the canonical page, archive order,
     previous/next links, image, sitemap, and production 404.
+
+The landing feature and archive display approved stories by descending sequence
+number. Story-detail Previous/Next links remain chronological: Previous points
+to the immediately older sequence and Next to the immediately newer sequence.
 
 Skipped publication days are allowed. Sequence numbers describe story order,
 not a promise of daily publication.
